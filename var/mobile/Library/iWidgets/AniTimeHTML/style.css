@@ -1,0 +1,76 @@
+:root {
+    --widget-top: 40px;
+    --widget-zoom: 1.5;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+#ani-time-root {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(var(--widget-zoom));
+    transform-origin: top center;
+    top: var(--widget-top);
+    transition: transform 0.1s ease;
+}
+
+.time-box {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.with-bg {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.char-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55px;
+    height: 90px;
+}
+
+.anime-sprite {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.divider {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111;
+    padding-bottom: 4px;
+    margin: 0 2px;
+}
+
+body.dark-mode .divider {
+    color: #fff;
+}
+
+.sec-element {
+    display: none;
+}
+
+.show-sec .sec-element {
+    display: flex;
+}
+
+.show-sec div.sec-element {
+    display: flex;
+}
+
