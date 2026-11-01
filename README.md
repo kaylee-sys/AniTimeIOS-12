@@ -25,7 +25,7 @@ A ported and optimized version of the popular anime clock widget for iOS Lock Sc
 2. Ensure that your widget folder contains the `assets` directory (with the `s-animated`, `s-static`, and `m-static` graphic packs) along with `index.html`, `style.css`, `main.js`, and `config.json`.
 3. Using **Filza File Manager**, transfer the entire folder (naming it exactly **`AniTimeHTML`**) to your iOS device using the following directory path:
    `/var/mobile/Library/LockHTML/`
-   *(If the folder does not show up in the Xen HTML list, use the alternative path: `/var/mobile/Library/Widgets/Universal/`)*
+   *(If the folder does not show up in the Xen HTML list, use the alternative path: `/var/mobile/Library/Widgets/`)*
 4. Open **iOS Settings** -> **Xen HTML**.
 5. Go to the Lockscreen or Homescreen menu -> **Foreground Widgets** -> **Add Widget**.
 6. Select **AniTimeHTML** from the list, configure the options to your liking, and apply the changes.
